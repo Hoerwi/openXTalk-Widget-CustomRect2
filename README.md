@@ -8,70 +8,24 @@ This widget allows the individual corners of a rectangle to be given a separate 
 The Label of the widget could be rotated.
 
 
-Name: ShowTopLeft
+Name: ShowTopLeft / ShowTopRight / ShowBottomLeft /ShowBottomRight
 Type: property
 
-Syntax: set showTopLeft of <widget> to true|false
+  set showTopLeft of widget to true|false
 
 Summary: the round of the corner can be toggled on or off
-
-
-Name: ShowTopRight
-Type: property
-
-Syntax: set showTopRight of <widget> to true|false
-
-Summary: the round of the corner can be toggled on or off
-
-
-Name: ShowBottomLeft
-Type: property
-
-Syntax: set showBottomLeft of <widget> to true|false
-
-Summary: the round of the corner can be toggled on or off
-
-
-Name: ShowBottomRight
-Type: property
-
-Syntax: showBottomRight of <widget> to true|false
-
-Summary: the round of the corner can be toggled on or off
-
 
 Name: rotLabel
 Type: property
 
-Syntax: set the rotLabel of <widget> to <Number>
+  set the rotLabel of widget to Number
 
 Summary: The label of the widget can be adjusted 360°
 
 
-Name: TopLeftRadius
+Name: TopLeftRadius / TopRightRadius / BottomLeftRadius / BottomRightRadius
 Type: property
 
-Syntax: set TopLeftRadius of <widget> to <Number>
-
-Name: TopRightRadius
-Type: property
-
-Syntax: set TopRightRadius of <widget> to <Number>
-
-Summary: The Radius of the Corner, should not set over 75
-
-
-Name: BottomLeftRadius
-Type: property
-
-Syntax: set BottomLeftRadius of <widget> to <Number>
-
-Summary: The Radius of the Corner, should not set over 75
-
-
-Name: BottomRightRadius
-Type: property
-
-Syntax: set BottomRightRadius of <widget> to <Number>
+  set TopLeftRadius of widget to Number
 
 Summary: The Radius of the Corner, should not set over 75
