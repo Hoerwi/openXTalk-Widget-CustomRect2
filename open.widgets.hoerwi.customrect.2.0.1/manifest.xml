@@ -1,0 +1,125 @@
+<package version="0.0">
+  <name>open.widgets.hoerwi.customrect</name>
+  <title>customRect</title>
+  <author>Andreas Strauch</author>
+  <version>2.0.1</version>
+  <license>community</license>
+  <type>widget</type>
+  <requires name="com.livecode.canvas"/>
+  <requires name="com.livecode.math"/>
+  <requires name="com.livecode.widget"/>
+  <requires name="com.livecode.arithmetic"/>
+  <requires name="com.livecode.binary"/>
+  <requires name="com.livecode.list"/>
+  <requires name="com.livecode.logic"/>
+  <requires name="com.livecode.string"/>
+  <requires name="com.livecode.type"/>
+  <requires name="com.livecode.array"/>
+  <requires name="com.livecode.engine"/>
+  <metadata key="svgicon">M0.510 125.434 C 1.201 249.714,1.257 251.016,6.597 267.052 C 25.722 324.488,61.831 367.226,111.969 391.766 C 152.936 411.818,150.701 411.561,284.056 411.561 L 400.187 411.561 399.490 286.127 C 398.799 161.847,398.743 160.545,393.403 144.509 C 374.278 87.072,338.169 44.335,288.031 19.795 C 247.064 -0.257,249.299 -0.000,115.944 0.000 L -0.187 0.000 0.510 125.434 M347.285 201.441 C 374.811 207.275,383.165 215.454,385.335 238.693 C 389.256 280.679,377.613 293.262,317.715 311.770 C 283.301 322.404,272.994 333.518,272.883 360.116 L 272.832 372.254 328.324 372.254 L 383.815 372.254 383.815 382.659 L 383.815 393.064 304.188 393.064 L 224.561 393.064 222.967 382.434 C 215.927 335.487,230.706 315.634,287.114 296.268 C 333.217 280.440,335.260 278.341,335.260 246.800 C 335.260 219.892,334.133 218.706,307.590 217.685 C 273.100 216.358,268.431 221.607,272.140 257.541 L 273.479 270.520 248.983 270.520 L 224.487 270.520 222.966 262.413 C 216.046 225.524,228.653 206.289,263.584 200.441 C 276.376 198.300,335.815 199.010,347.285 201.441 </metadata>
+  <property name="formattedWidth" get="real"/>
+  <metadata key="formattedWidth.user_visible">false</metadata>
+  <property name="formattedHeight" get="real"/>
+  <metadata key="formattedHeight.user_visible">false</metadata>
+  <property name="label" get="string" set="string"/>
+  <metadata key="label.editor">com.livecode.pi.string</metadata>
+  <metadata key="label.default">customRect2</metadata>
+  <metadata key="label.label">Label</metadata>
+  <property name="showLabel" get="boolean" set="boolean"/>
+  <metadata key="showLabel.default">true</metadata>
+  <metadata key="ShowLabel.label">Show Label</metadata>
+  <property name="rotlabel" get="real" set="number"/>
+  <metadata key="rotlabel.section">Text</metadata>
+  <metadata key="rotlabel.editor">com.livecode.pi.number</metadata>
+  <metadata key="rotlabel.label">Label Rotation</metadata>
+  <metadata key="rotlabel.default">0</metadata>
+  <metadata key="rotlabel.step">1</metadata>
+  <metadata key="rotlabel.min">0</metadata>
+  <metadata key="rotlabel.max">360</metadata>
+  <metadata key="textStyle.editor">com.livecode.pi.textstyle</metadata>
+  <property name="textalign" get="string" set="string"/>
+  <metadata key="textalign.editor">com.livecode.pi.textalign</metadata>
+  <property name="opaque" get="boolean" set="boolean"/>
+  <metadata key="opaque.default">true</metadata>
+  <metadata key="opaque.label">Opaque</metadata>
+  <property name="showBorder" get="boolean" set="boolean"/>
+  <metadata key="showBorder.default">false</metadata>
+  <metadata key="showBorder.label">Show border</metadata>
+  <property name="bordersize" get="real" set="real"/>
+  <metadata key="bordersize.label">bordersize</metadata>
+  <metadata key="bordersize.editor">com.livecode.pi.number</metadata>
+  <metadata key="bordersize.default">0</metadata>
+  <property name="ShowTopLeft" get="boolean" set="boolean"/>
+  <property name="ShowTopRight" get="boolean" set="boolean"/>
+  <property name="ShowBottomLeft" get="boolean" set="boolean"/>
+  <property name="ShowBottomRight" get="boolean" set="boolean"/>
+  <metadata key="ShowTopLeft.label">Show Round Top Left</metadata>
+  <metadata key="ShowTopRight.label">Show Round Top Right</metadata>
+  <metadata key="ShowBottomLeft.label">Show Round Bottom Left</metadata>
+  <metadata key="ShowBottomRight.label">Show Round Bottom Right</metadata>
+  <property name="TopLeftRadius" get="number" set="number"/>
+  <property name="TopRightRadius" get="number" set="number"/>
+  <property name="BottomLeftRadius" get="number" set="number"/>
+  <property name="BottomRightRadius" get="number" set="number"/>
+  <metadata key="TopLeftRadius.label">Top Left</metadata>
+  <metadata key="TopLeftRadius.editor">com.livecode.pi.number</metadata>
+  <metadata key="TopLeftRadius.default">1</metadata>
+  <metadata key="TopLeftRadius.step">1</metadata>
+  <metadata key="TopLeftRadius.min">0</metadata>
+  <metadata key="TopLeftRadius.max">75</metadata>
+  <metadata key="TopRightRadius.label">Top Right</metadata>
+  <metadata key="TopRightRadius.editor">com.livecode.pi.number</metadata>
+  <metadata key="TopRightRadius.default">45</metadata>
+  <metadata key="TopRightRadius.step">1</metadata>
+  <metadata key="TopRightRadius.min">0</metadata>
+  <metadata key="TopRightRadius.max">75</metadata>
+  <metadata key="BottomLeftRadius.label">Bottom Left</metadata>
+  <metadata key="BottomLeftRadius.editor">com.livecode.pi.number</metadata>
+  <metadata key="BottomLeftRadius.default">45</metadata>
+  <metadata key="BottomLeftRadius.step">1</metadata>
+  <metadata key="BottomLeftRadius.min">0</metadata>
+  <metadata key="BottomLeftRadius.max">75</metadata>
+  <metadata key="BottomRightRadius.label">Bottom Right</metadata>
+  <metadata key="BottomRightRadius.editor">com.livecode.pi.number</metadata>
+  <metadata key="BottomRightRadius.default">1</metadata>
+  <metadata key="BottomRightRadius.step">1</metadata>
+  <metadata key="BottomRightRadius.min">0</metadata>
+  <metadata key="BottomRightRadius.max">75</metadata>
+  <metadata key="foregroundColor.editor">com.livecode.pi.color</metadata>
+  <metadata key="foregroundColor.default"></metadata>
+  <metadata key="foregroundColor.section">Colors</metadata>
+  <metadata key="foregroundColor.label">Text</metadata>
+  <metadata key="backgroundColor.editor">com.livecode.pi.color</metadata>
+  <metadata key="backgroundColor.default">192,192,192</metadata>
+  <metadata key="backgroundcolor.section">Colors</metadata>
+  <metadata key="backgroundColor.label">Background</metadata>
+  <metadata key="borderColor.editor">com.livecode.pi.color</metadata>
+  <metadata key="borderColor.default"></metadata>
+  <metadata key="bordercolor.section">Colors</metadata>
+  <metadata key="borderColor.label">Border</metadata>
+  <metadata key="foregroundPattern.editor">com.livecode.pi.pattern</metadata>
+  <metadata key="foregroundPattern.default"></metadata>
+  <metadata key="foregroundPattern.section">Colors</metadata>
+  <metadata key="foregroundPattern.label">Text</metadata>
+  <metadata key="backgroundPattern.editor">com.livecode.pi.pattern</metadata>
+  <metadata key="backgroundPattern.default"></metadata>
+  <metadata key="backgroundPattern.section">Colors</metadata>
+  <metadata key="backgroundPattern.label">Background</metadata>
+  <metadata key="borderPattern.editor">com.livecode.pi.pattern</metadata>
+  <metadata key="borderPattern.default"></metadata>
+  <metadata key="borderPattern.section">Colors</metadata>
+  <metadata key="borderPattern.label">Border</metadata>
+  <handler name="setAlign" parameters="in string" return="nothing"/>
+  <handler name="setLabel" parameters="in string" return="nothing"/>
+  <handler name="setRotLabel" parameters="in number" return="nothing"/>
+  <handler name="setStroke" parameters="in real" return="any"/>
+  <handler name="OnCreate" parameters="" return="any"/>
+  <handler name="onSave" parameters="out array" return="any"/>
+  <handler name="onLoad" parameters="in array" return="any"/>
+  <handler name="OnGeometryChanged" parameters="" return="any"/>
+  <handler name="OnOpen" parameters="" return="any"/>
+  <handler name="OnMouseUp" parameters="" return="any"/>
+  <handler name="OnMouseCancel" parameters="" return="any"/>
+  <handler name="OnMouseDown" parameters="" return="any"/>
+  <handler name="OnPaint" parameters="" return="any"/>
+</package>
